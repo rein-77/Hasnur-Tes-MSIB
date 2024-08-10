@@ -1,7 +1,7 @@
 <x-sidebar>
 <form method="post" action="{{ route('materi.update', $materi) }}">
 @method('PATCH')
-<div class="w3-half w3-dark-grey w3-container" style="height:100vh">
+<div class="w3-half w3-pale-blue w3-container" style="height:100vh">
     <div class="w3-padding-64 w3-center">
     
         <h1>Materi {{ $materi->judul ?? '' }}</h1>

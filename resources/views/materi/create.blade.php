@@ -1,6 +1,6 @@
 <x-sidebar>
 <form method="post" action="{{ route('materi.store') }}">
-<div class="w3-half w3-dark-grey w3-container" style="height:100vh">
+<div class="w3-half w3-pale-blue w3-container" style="height:100vh">
     <div class="w3-padding-64 w3-center">
     
         <h1>Materi {{ $materi->judul ?? '' }}</h1>
@@ -26,9 +26,9 @@
             <textarea name="deskripsi" id="deskripsi">{{ old('deskripsi', $materi->deskripsi ?? '') }}</textarea>
 
             <label for="link_embed">Link Materi</label>
-            <textarea name="link_embed" id="link_embed">{{ old('link_embed', $materi->link_embed ?? '') }}</textarea>
+            <textarea  name="link_embed" id="link_embed">{{ old('link_embed', $materi->link_embed ?? '') }}</textarea>
         
-              <button class="w3-hover-black  w3-light-green" style="margin-top:15px">Save</button>  
+              <button style="margin-top:15px">Save</button>  
 
             <a class="w3-button w3-round w3-light-grey" href="{{ route('materi.index') }}">Kembali</a>
 
